@@ -244,60 +244,23 @@ background-color: var(--bg-color-three);
   color: #4E342E;
   font-size: 20px;
 }
-/* Navbar Styling */
-.navbar {
-  background-color: var(--bg-color-four) !important;
-  height: 12vh; /* Responsive height based on viewport */
-  width: 100%; /* Full width */
-  padding: 1.5%; /* Adjust padding using percentage */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    .navbar {
+  height: 70px;
+  padding: 10px 15px; 
 }
 
-/* Navbar Logo */
-.navbar-brand img {
-  width: 10%; /* Scales based on parent container */
-  height: auto; /* Maintains aspect ratio */
-  max-height: 12vh; /* Prevents it from becoming too big */
-}
-
-/* Navbar Links */
-.nav-link {
-  margin-left: 2%; /* Consistent spacing */
-  font-size: 1.2vw; /* Responsive text size */
-}
-
-/* Navbar Toggler (For Mobile) */
 .navbar-toggler {
-  margin-left: auto;
-  width: 5vw; 
-  height: 5vh;
+  margin-left: auto; 
 }
 
-/* Navbar Collapse (For Mobile View) */
 .navbar-collapse {
-  width: 100%;
-  padding: 2%;
-  text-align: center; 
+  flex-grow: 0; 
 }
 
-
-@media (max-width: 768px) {
-  .navbar {
-    height: auto;
-    padding: 3%;
-  }
-
-  .navbar-brand img {
-    width: 15%;
-    max-height: 10vh;
-  }
-
-  .nav-link {
-    font-size: 1.5vw;
-    margin: 2% 0;
-  }
+.navbar-brand img {
+  width: 80px !important; 
+  height: auto !important;
+  max-height: 60px; 
 }
 
 </style>
