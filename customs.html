@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #4E342E;
+      background-color: #F3E5D8;
+    }
+    :root {
+      --bg-color-one: #5D4037;
+      --bg-color-two: #F7CAC9;
+      --bg-color-three: #C19A6B;
+    }
+    body {
+      color: var(--bg-color-one);
+      font-family: 'Arial', sans-serif;
+    }
+    
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  
+    
+    .footer {
+      background-color: #D8A47F;
+    }
+    
+    .signup-btn {
+      border: 2px solid #8c5e3c !important;
+      color: white !important;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .signup-btn:hover {
+      background-color: #8c5e3c !important;
+      color: black !important;
+    }
+    
+    .lead {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    }
+    
+    .banner {
+      height: 600px;
+    }
+    
+    .view-button {
+      border-color: #D69A6D !important;
+      border: 1.5px solid;
+    }
+    
+    .view-button:hover {
+      background-color: #d4905b !important;
+    }
+    
+    .nav-link:hover {
+      color: white !important;
+    }
+    
+    
+    .btn.btn-primary {
+      background-color: #5D4037;
+      color: white;
+      border-color: #5D4037;
+    }
+    
+    .btn.btn-primary:hover {
+      background-color: #8c5e3c;
+    }
+    
+    .btn.btn-secondary {
+      background-color: #8c5e3c;
+      color: white;
+      border-color: #8c5e3c;
+    }
+    
+    .btn.btn-secondary:hover {
+      background-color: #6b4329;
+    }
+    
+    .order-btn {
+      background-color: #5D4037;
+      color: white;
+    }
+    
+    .order-btn:hover {
+      background-color: #8c5e3c;
+      color: white;
+    }
+
+    #checkout-section {
+    margin: 10px auto;  
+    padding: 10px;      
+
+}
+ h2{
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+ }
+ .nav-link{
+  margin-left: 20px;
+}
+.navbar-brand{
+font-weight: bold;
+color: #4E342E;
+}
+    
+</style>
+
+<body>
+
+  <section class="start mt-5 py-3">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" style="background-color: #D8A47F;  height: 80px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./images/Screenshot_2025-03-28_024514-removebg-preview.png" alt="logo" width="130" height="90">BTEC KITCHEN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="services.html#delivery">Delivery </a></li>
+                    <li><a class="dropdown-item" href="services.html#custom-orders">Custom orders</a></li>
+                    
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search"> 
+               <a href="contactUs.html">  <button type="button" class="btn order-btn" id="Order-Nav" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg></button> </a>
+         
+            </button>
+              </form>
+  
+            </div>
+          </div>
+        </nav>
+      </section>
+      
+      <div class="py-5 text-center">
+
+        <h2>Checkout</h2>
+        <p class="lead">As a business we insure fast, up to standards effeicency. Please place your order here by finishing this quick form </p>
+      </div>
+      <div class="row g-5" id="checkout-section">
+        
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Your cart</span>
+            <span class="badge bg-primary rounded-pill">1</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Lorem, ipsum.</h6>
+                <small class="text-body-secondary">Lorem ipsum dolor sit.</small>
+              </div>
+              <span class="text-body-secondary">12,000 shs.</span>
+            </li>
+            
+            
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (UGX)</span>
+              <strong>7,000</strong>
+            </li>
+          </ul>
+  
+
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Billing address</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label">City</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>Kampala</option>
+                  <option>Jinja</option>
+                  <option>Wakiso</option> 
+                    <option>Entebbe</option>
+    
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid city.
+                </div>
+              </div>
+  
+
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Suburb</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                 Suburbcode required.
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Save this information for next time</label>
+            </div>
+  
+            <hr class="my-4">
+  
+            <h4 class="mb-3">Payment</h4>
+
+<div class="my-3">
+  <div class="form-check">
+    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+    <label class="form-check-label" for="credit">Credit card</label>
+  </div>
+  <div class="form-check">
+    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+    <label class="form-check-label" for="debit">Debit card</label>
+  </div>
+  <div class="form-check">
+    <input id="cash" name="paymentMethod" type="radio" class="form-check-input" required>
+    <label class="form-check-label" for="cash">Cash on Delivery</label>
+  </div>
+</div>
+
+<div id="paymentFields" class="row gy-3">
+  <div class="col-md-6">
+    <label for="cc-name" class="form-label">Name on card</label>
+    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+    <small class="text-body-secondary">Full name as displayed on card</small>
+    <div class="invalid-feedback">
+      Name on card is required
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <label for="cc-number" class="form-label">Credit card number</label>
+    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+    <div class="invalid-feedback">
+      Credit card number is required
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <label for="cc-expiration" class="form-label">Expiration</label>
+    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+    <div class="invalid-feedback">
+      Expiration date required
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <label for="cc-cvv" class="form-label">CVV</label>
+    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+    <div class="invalid-feedback">
+      Security code required
+    </div>
+  </div>
+</div>
+
+<div id="cashMessage" style="visibility: hidden; text-align: center; padding-top: 10px;">
+  <p>Pay upon delivery</p>
+</div>
+
+<hr class="my-4">
+
+<script>
+  const cashOption = document.getElementById('cash');
+  const paymentFields = document.getElementById('paymentFields');
+  const cashMessage = document.getElementById('cashMessage');
+
+  cashOption.addEventListener('change', function() {
+    if (cashOption.checked) {
+      paymentFields.style.visibility = 'hidden'; // Hide credit card fields, preserve layout
+      cashMessage.style.visibility = 'visible'; // Show cash message
+    }
+  });
+
+  // Reset back to credit/debit card if those options are selected
+  document.getElementById('credit').addEventListener('change', function() {
+    paymentFields.style.visibility = 'visible';
+    cashMessage.style.visibility = 'hidden';
+  });
+
+  document.getElementById('debit').addEventListener('change', function() {
+    paymentFields.style.visibility = 'visible';
+    cashMessage.style.visibility = 'hidden';
+  });
+</script>
+
+            
+
+            <button type="button" class="btn btn-primary order-btn" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+
+          </form>
+        </div>
+      </div>
+      
+
+      <section class="footer">
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Home</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Main</a></li>
+                  <li class="nav-item mb-2"><a href="#section-1" class="nav-link p-0 text-body-secondary">Menu</a></li>
+                 
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Contact us</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="./contactUs.html" class="nav-link p-0 text-body-secondary">Call now</a></li>
+                  <li class="nav-item mb-2"><a href="./contactUs.html" class="nav-link p-0 text-body-secondary">FAQ</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Shopping</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="./OrderNow.html" class="nav-link p-0 text-body-secondary">Chekout</a></li>
+                  <li class="nav-item mb-2"><a href="./services.html" class="nav-link p-0 text-body-secondary">Order</a></li>
+                </ul>
+                  
+                
+              </div>
+        
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn subscribe-btn order-btn col-3" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>© 2025 Bakesale. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </section>
+      
+
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel">Order Confirmation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         Your order has been taken! Thank you for ordering. We'll prepare it as soon as possible.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+ // Handle Subscribe Button
+ const subscribeButton = document.querySelector(".subscribe-btn"); // Selects the Subscribe button
+        const emailInput = document.getElementById("newsletter1"); // Email input field
+      
+        if (subscribeButton) {
+          subscribeButton.addEventListener("click", function () {
+            const email = emailInput.value.trim();
+            
+            if (email) {
+              // Use SweetAlert to show success message with the subscribed email
+              Swal.fire({
+                title: "", // Removes the title
+                text: `Subscribed with: ${email}`,
+                icon: "success",
+                confirmButtonText: "OK"
+              });
+      
+              emailInput.value = ""; // Clear input after subscribing
+            } else {
+              // Show error if the email is empty
+              Swal.fire({
+                title: "", // Removes the title
+                text: "Please enter a valid email address.",
+                icon: "error",
+                confirmButtonText: "OK"
+              });
+            }
+          });
+        }
+
+</script>
+</html>
+
+
+
+

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #4E342E;
+}
+:root {
+  --bg-color-one: #5D4037;
+  --bg-color-two: #F7CAC9;
+  --bg-color-three: #C19A6B;
+  --bg-color-four:#D8A47F;
+  --bg-color:#F3E5D8;
+  --CTA-button-one: #8c5e3c;
+}
+body {
+  color: var(--bg-color-one);
+  font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer {
+  background-color: var(--bg-color-four);
+}
+
+.signup-btn {
+  border: 2px solid #8c5e3c !important;
+  color: white !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #8c5e3c !important;
+  color: black !important;
+}
+
+.lead {
+  color: #000;
+}
+
+.view-button {
+  border-color: #D69A6D !important;
+  border: 1.5px solid;
+}
+
+.view-button:hover {
+  background-color: #d4905b !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+
+.btn.btn-primary {
+  background-color: #d69a6d;
+  color: white;
+  border-color: #d69a6d;
+}
+
+.btn.btn-primary:hover {
+  background-color: #b57e4d;
+}
+
+.btn.btn-secondary {
+  background-color: #8c5e3c;
+  color: white;
+  border-color: #8c5e3c;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #6b4329;
+}
+
+.order-btn {
+  background-color: var(--bg-color-one);
+  color: white;
+}
+
+.order-btn:hover {
+  background-color: var(--CTA-button-one);
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+body {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+ 
+  header {
+    color: black;
+    padding: 30px 0;
+    text-align: center;
+  }
+  /* .contact-us */
+   .contact-us {
+    font-size: 20px;
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 20px;
+    max-height: 350px;
+    background: linear-gradient(300deg, #C97A85, #99608b , #C97A85);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  p {
+    line-height: 1.6;
+  }
+
+/* FAQ-Section */
+ h1 {
+    margin: 50px 0 30px;
+    text-align: center;
+    
+}
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.faq {
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.faq.active {
+    background-color:#fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px
+    6px rgba(0,0,0,0.1);
+}
+.faq.active::before,
+.faq.active::after{
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    color: rgb(181, 181, 11);
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+.faq.active::before {
+    color: rgb(104, 104, 237);
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+.faq-title {
+    margin: 0 3px 0 0;
+}
+.faq-text {
+    display: none;
+   margin: 30px 0 0; 
+}
+.faq.active .faq-text {
+    display: block;
+}
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius:50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+.faq-toggle:focus {
+    outline: 0;
+}
+h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+ h3 {
+  text-align: center;
+  font-size: 15px;
+}
+.FAQ-container {
+  width: 600px;
+}
+.faq-toggle .fa-times {
+    display: none;
+}
+.faq.active .faq-toggle .fa-times {
+    color: #fff;
+    display: block;
+}
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+.faq.active .faq-toggle {
+    background-color: #9fa4a8;
+}
+.contact-us {
+  text-align: center;
+}
+.faq-title {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: inherit;
+}
+.navbar{
+  background-color: var(--bg-color-four) !important;
+  height: 80px;
+  width: 100vw !important;
+  padding: 0;
+ 
+}
+
+.navbar-collapse {
+  width: 100vw !important; 
+  background-color: var(--bg-color-four) !important;
+  margin-top:5px;
+  padding: 0;
+}
+.nav-link{
+  margin-left: 20px;
+}
+.navbar-brand{
+font-weight: bold;
+color: #4E342E;
+}
+
+</style>
+
+<body>
+  <section class="start mt-5 py-3">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./images/Screenshot_2025-03-28_024514-removebg-preview.png" alt="logo" width="130" height="90">BTEC KITCHEN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="services.html#delivery">Delivery </a></li>
+                    <li><a class="dropdown-item" href="services.html#custom-orders">Custom orders</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search"> 
+               <a href="contactUs.html"><button type="button" class="btn order-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg></button> </a>
+         
+            </button>
+
+            
+                        </form>
+  
+            </div>
+          </div>
+        </nav>
+      </section>
+
+    <main>
+        <br>
+        <br>
+        <section class="contact-us">
+          <div class="container">
+            <h1>Contact Us</h1>
+            <div class="company-info">
+              <p><strong>Company Name:</strong> Bakesale</p>
+              <p><strong>Address:</strong> Lubbobo Close, Kampala, Uganda</p>
+              <p><strong>Email:</strong> <a href="bakesale@gmail.com">bakesale@gmail.com"</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+18001234567">+256 782 444 900</a></p>
+            </div>
+          </div>
+        </section>
+        <br>
+        <br>
+        <section class="faq-section">
+          <h2> Most Frequently Asked Questions</h2>
+          <div class="faq-container">
+            <div class="faq active">
+              <h3 class="faq-title">
+                What types of baked goods do people prefer the most?
+                <button class="faq-toggle">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </h3>
+              <p class="faq-text">Cookies, brownies, cupcakes, and bread are popular. Seasonal and dietary-friendly options</p>
+            </div>
+            <div class="faq">
+              <h3 class="faq-title">
+                Do we offer pre-orders or only in-person sales?
+                <button class="faq-toggle">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </h3>
+              <p class="faq-text">We offer both! Customers can pre-order online or visit our store for same-day purchases</p>
+            </div>
+            <div class="faq">
+              <h3 class="faq-title">
+                Are the prices reliable?
+                <button class="faq-toggle">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </h3>
+              <p class="faq-text">Yes, our prices are set fairly, reflecting ingredient quality and market trends while ensuring great value.</p>
+            </div>
+            <div class="faq">
+              <h3 class="faq-title">
+                How do we effectively manage bulk orders?
+                <button class="faq-toggle">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </h3>
+              <p class="faq-text">We require advance notice for bulk orders to ensure quality and timely delivery, with customizable options available.</p>
+            </div>
+            <div class="faq">
+              <h3 class="faq-title">
+           Do we offer a loyalty program for frequent buyers?
+                <button class="faq-toggle">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </h3>
+              <p class="faq-text">Yes! Customers can earn rewards, discounts, or exclusive offers by signing up for our loyalty program.
+
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+
+      <section class="footer">
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Home</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Main</a></li>
+                  <li class="nav-item mb-2"><a href="#section-1" class="nav-link p-0 text-body-secondary">Menu</a></li>
+                 
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Contact us</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="./contactUs.html" class="nav-link p-0 text-body-secondary">Call now</a></li>
+                  <li class="nav-item mb-2"><a href="./contactUs.html" class="nav-link p-0 text-body-secondary">FAQ</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Shopping</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="./OrderNow.html" class="nav-link p-0 text-body-secondary">Chekout</a></li>
+                  <li class="nav-item mb-2"><a href="./services.html" class="nav-link p-0 text-body-secondary">Order</a></li>
+                </ul>
+                  
+                
+              </div>
+        
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn subscribe-btn order-btn col-3" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>© 2025 Bakesale. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </section>
+      
+    
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      
+      <script>
+        // FAQ Toggle Functionality
+        const toggles = document.querySelectorAll('.faq-toggle');
+      
+        toggles.forEach(toggle => {
+          toggle.addEventListener('click', () => {
+            const faqItem = toggle.closest('.faq');
+            faqItem.classList.toggle('active');
+          });
+        });
+      
+        // Handle Subscribe Button
+        const subscribeButton = document.querySelector(".subscribe-btn"); // Selects the Subscribe button
+        const emailInput = document.getElementById("newsletter1"); // Email input field
+      
+        if (subscribeButton) {
+          subscribeButton.addEventListener("click", function () {
+            const email = emailInput.value.trim();
+            
+            if (email) {
+              // Use SweetAlert to show success message with the subscribed email
+              Swal.fire({
+                title: "", // Removes the title
+                text: `Subscribed with: ${email}`,
+                icon: "success",
+                confirmButtonText: "OK"
+              });
+      
+              emailInput.value = ""; // Clear input after subscribing
+            } else {
+              // Show error if the email is empty
+              Swal.fire({
+                title: "", // Removes the title
+                text: "Please enter a valid email address.",
+                icon: "error",
+                confirmButtonText: "OK"
+              });
+            }
+          });
+        }
+      </script>
+      
+
+</body>
+
+</html>
