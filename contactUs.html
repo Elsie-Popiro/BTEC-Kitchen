@@ -271,11 +271,31 @@ font-weight: bold;
 color: #4E342E;
 }
 
+.navbar {
+  height: 90px; /* Adjusted navbar height */
+  padding: 10px 15px; /* Adjusted padding */
+}
+
+.navbar-brand img {
+  width: 110px; /* Reduce logo width */
+  height: 70px; /* Reduce logo height */
+}
+
+.navbar-toggler {
+  margin-left: auto; /* Ensures the toggler stays on the same line */
+}
+
+.navbar-collapse {
+  flex-grow: 0; /* Prevents the collapse from taking too much width */
+}
+ 
+
 </style>
 
 <body>
   <section class="start mt-5 py-3">
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+   <nav id="navbar" class="navbar navbar-expand-lg fixed-top justify-content-between">
+
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="Screenshot_2025-03-28_024514-removebg-preview.png" alt="logo" width="130" height="90">BTEC KITCHEN</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
